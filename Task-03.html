@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-03</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <img
+        style="height: 300px; width: 400px"
+        src="./images/meta.png"
+        alt="Image"
+        id="img"
+      />
+    </div>
+
+    <br /><br />
+
+    <div style="display: flex; justify-content: center">
+      <button id="btn1" style="margin: 5px">Button-01</button>
+      <button id="btn2" style="margin: 5px">Button-02</button>
+    </div>
+
+    <script>
+      let img = document.getElementById("img");
+      let btn1 = document.getElementById("btn1");
+      let btn2 = document.getElementById("btn2");
+
+      btn1.onclick = function () {
+        img.src = "images/meta.png";
+      };
+
+      btn2.onclick = function () {
+        img.src = "images/spacex.jpg";
+      };
+    </script>
+  </body>
+</html>

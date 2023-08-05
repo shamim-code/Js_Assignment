@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-04</title>
+</head>
+<body>
+    
+    <h1>Please Check on console to see fetch data</h1>
+
+    <script>
+        let url = "https://jsonplaceholder.typicode.com/posts";
+
+        fetch(url)
+        .then(res => res.json())
+        .then(data => console.log(data));
+
+    </script>
+</body>
+</html>
