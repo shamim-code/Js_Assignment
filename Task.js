@@ -10,7 +10,7 @@ let server = http.createServer((req,res)=>{
     }else if(req.url === '/contact'){
         res.end('This is Contact Page.')
     }else if(req.url === '/file-write'){
-        fs.writeFile('./demo.txt','hello world',(err,data)=>{
+        fs.writeFile('./demo.txt','hello world',(err)=>{
             if(err){
                 res.writeHead(200);
                 res.write('File creation failed!');
