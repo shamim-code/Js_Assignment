@@ -32,11 +32,6 @@ app.use(cors())
 app.use(mongoSanitize())
 app.use(helmet())
 app.use(hpp())
-
-//problem on this validator. I got some error on this
-// app.use(validator())
-
-app.use(upload.array())
 app.use(express.static("public"))
 
 
