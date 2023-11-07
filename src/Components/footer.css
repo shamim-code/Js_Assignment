@@ -1,0 +1,13 @@
+
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.footer h4{
+    position: absolute;
+}
